@@ -24,6 +24,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'My website',
+      template: './templates/client.html',
     }),
   ],
 };
