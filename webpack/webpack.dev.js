@@ -1,30 +1,6 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const merge = require('webpack-merge');
+import commonConfig from './webpack.common';
 
-module.exports = {
-  entry: {
-    app: './src/client.js',
-  },
-  output: {
-    path: path.resolve(__dirname, '../_dist'),
-    filename: 'india.js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-    ],
-  },
+module.exports = merge(commonConfig, {
   mode: 'development',
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'My website',
-      template: './templates/client.html',
-    }),
-  ],
-};
+});
