@@ -30,3 +30,4 @@ workflows:
   build_and_activate:
     jobs:
       - build
+      - unit_test
