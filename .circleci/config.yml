@@ -1,4 +1,5 @@
-
+version: 2
+jobs:
   build:
     working_directory: ~/repo
     docker:
@@ -22,7 +23,6 @@
       - run:
           name: Build
           command: npm run build:client:prod
-
   unit_test:
     working_directory: ~/repo
     docker:
@@ -46,3 +46,10 @@
       - run:
           name: Lint
           command: npm run lint
+
+workflows:
+  version: 2
+  build_and_activate:
+    jobs:
+      - build
+      - unit_test
