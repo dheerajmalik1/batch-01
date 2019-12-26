@@ -1,4 +1,4 @@
-##Technologies
+#Technologies
 - Git, Github
 - New project initiation using npm
 - Editorconfig
