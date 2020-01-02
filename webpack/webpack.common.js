@@ -6,7 +6,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 module.exports = {
   entry: {
-    app: './src/client/index.js',
+    app: './src/index.js',
   },
   output: {
     path: path.resolve(__dirname, '../_dist'),
