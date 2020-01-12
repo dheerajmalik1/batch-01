@@ -1,0 +1,38 @@
+.profile-title {
+    margin-left: 10px;
+    display: inline-block;
+    width: 80%;
+  }
+  
+  .profile-content {
+    margin-top: 100px;
+    display: flex;
+  }
+  
+  .profile-picture {
+    display: inline;
+    float: right
+  }
+  
+  .profile-left {
+    width: 30%;
+    margin-left: 20px;
+  }
+  
+  .profile-right {
+    margin-left: 50px;
+    padding-left: 50px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .profile-photo {
+    width: 50%;
+    height: 200px;
+    border: 2px solid #ccc;
+  }
+  
+  .profile-summary {
+    width: 70%;
+    font-size: 20px;
+  }
+  

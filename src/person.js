@@ -8,6 +8,7 @@ function Person (props) {
       <p><b>Lastname:</b> {props.name.lastname}</p>
     </div>
   )
+    
 }
 
 export default Person;

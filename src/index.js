@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Person from './person';
-
-const name = {
-  firstname: "Dheeraj",
-  lastname: "Malik",
-}
+import profileData from "./profile.json"
+import Profile from "./profile.js"
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>JS Drome batch 1</h1>
-        <Person name={name}/>
+        <Profile profile={profileData} />
       </div>
     )
   }
